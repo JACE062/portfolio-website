@@ -1,28 +1,28 @@
 :root {
-    --bg-primary: #f4f6f8;
+    --bg-primary: #b1cbe7;
     --bg-secondary: white;
     --text-primary: #333;
     --text-header: white;
-    --color-primary: #328540;
-    --color-headings: #328540;
-    --color-accent: #04aa4f;
+    --color-primary: #5e93cf;
+    --color-headings: #21548d;
+    --color-accent: #21548d;
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    --link: #5490ff;
-    --link-hover: #4283fc;
+    --link: #5e93cf;
+    --link-hover: #21548d;
 
     --font: 'Segoe UI', sans-serif;
 }
 
 body.dark-theme {
-    --bg-primary: rgb(46, 46, 46);
-    --bg-secondary: rgb(65, 65, 65);;
-    --text-primary: rgb(227, 227, 227);
+    --bg-primary: #00162d;
+    --bg-secondary: #444444;
+    --text-primary: rgb(233, 233, 233);
     --text-header: white;
-    --color-primary: #265ab5;
-    --color-headings: #569cf1;
-    --color-accent: #3589f0;
-    --link: #61a2f2;
-    --link-hover: #4186db;
+    --color-primary: #21548d;
+    --color-headings: #5e93cf;
+    --color-accent: #21548d;
+    --link: #b1cbe7;
+    --link-hover: #5e93cf;
 
 }
 
@@ -45,7 +45,7 @@ body {
     background: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
-    padding: 2rem;
+
 
 
 }
@@ -69,12 +69,17 @@ a:hover {
 header {
     justify-content: center;
     text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
     background: var(--color-primary);
     color: var(--text-header);
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 0.8rem;
+    margin-top: 0;
     margin-bottom: 2rem;
-    margin: auto;
+    border-radius: 3px;
+    
 }
 
 nav ul {
@@ -82,7 +87,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     margin: 1rem 0 1rem 0;
-    gap: 3rem;
+    gap: 4rem;
     flex-wrap: wrap;
 }
 
@@ -101,7 +106,7 @@ nav a:hover {
 
 
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -120,12 +125,14 @@ main {
 footer {
     justify-content: center;
     text-align: center;
+    width: 100%;
+
     background: var(--color-primary);
     color: var(--text-header);
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 3px;
     margin-bottom: 2rem;
-    margin: auto;
+    margin: 0;
 }
 
 footer a {
@@ -230,8 +237,8 @@ blockquote {
 
 .theme-toggle {
     position: absolute;
-    top: 5rem;
-    right: 5rem;
+    top: 3rem;
+    right: 3rem;
     background: rgba(255, 255, 255, 0.2);
     border: none;
     color: white;
