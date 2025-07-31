@@ -21,4 +21,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+    let slides_array = ["images/slide1.png", "images/slide2.png", "images/slide3.png", "images/slide4.png", "images/slide5.png"]
+
+    const myInterval = setInterval(slideshowTimer, 4000);
+
+    let slideIndex = 0;
+    function slideshowTimer() {
+        if (slideIndex < slides_array.length-1) {
+            slideIndex ++;
+        } else {
+            slideIndex = 0;
+        }
+        slide.src = slides_array[slideIndex];
+
+
+    }
+
 });
