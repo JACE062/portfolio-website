@@ -39,31 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-
-
-
-    try {
-        if (!loadLocal()) {
-            character = Math.floor(Math.random() * 7)
-            let url = `https://star-wars-quotes-api-character-collection.p.rapidapi.com/quote?character=${character}`;
-            fetch(url, options)
-            .then(response => response.json())
-            .then(data => {
-                quoteText.innerHTML = "\"" + data.quote + "\"";
-                quoteAuthor.innerHTML = "\"" + data.character + " - " + data.source + "\"";
-
-                console.log(result);
-            });                
-        }
-        
-        
-        
-    } catch (error) {
-        console.error(error);
-    }
-
-
-
     fetch("https://dummyjson.com/quotes/random")
     .then((results) => results.json())
     .then((data) => {
