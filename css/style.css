@@ -266,6 +266,8 @@ blockquote {
 
 #slideshow {
     margin: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 #slide {

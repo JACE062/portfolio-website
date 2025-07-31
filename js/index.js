@@ -64,6 +64,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    fetch("https://dummyjson.com/quotes/random")
+    .then((results) => results.json())
+    .then((data) => {
+        quoteText.innerHTML = "\"" + data.quote + "\"";
+        quoteAuthor.innerHTML = " - " + data.author;
+    ;
+    })
+    .catch((error) => {
+        console.error("Quote load failed:", error);
+        document.getElementById("quote").innerText = "Could not load quote.";
+    });
+
 
 });
 
